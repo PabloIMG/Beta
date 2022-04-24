@@ -1,5 +1,6 @@
 import discord
 from discord.ext import commands
+from constants import TOKEN
 
 bot = commands.Bot(command_prefix = '<', description = "Bot destinado a pruebas para Roboc")
 contador = 0
@@ -23,4 +24,4 @@ async def contar(ctx, cuentaUsuario: str):
 
 	await ctx.send(msg)
 
-bot.run('OTQ5NzgzMjI1MjQzNDIyNzMw.YiPYjw.AevcwnPLo4XFgHkdRUPTk-SEcW0')
+bot.run(TOKEN)
